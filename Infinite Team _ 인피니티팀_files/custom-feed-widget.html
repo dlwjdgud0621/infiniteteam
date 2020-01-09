@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(1059)https://social-blog.wix.com/custom-feed-widget?cacheKiller=1578570741403&compId=comp-jq52fkjv&currency=KRW&deviceType=desktop&height=306&instance=tFcU4ln3Y4p6luaYoJ8osSNCi0vQLqmJW7HbrBzxId4.eyJpbnN0YW5jZUlkIjoiOGY3NGUzNDctNmUwOC00MmRkLTkxNTktNGI3ZmU5OTBhNTVhIiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiMjBjOTAyMzUtNTc4Mi00MDg0LThlZjAtMmM4Mzg1ZGQxM2JlIiwic2lnbkRhdGUiOiIyMDIwLTAxLTA5VDExOjUyOjE2LjUxN1oiLCJ1aWQiOiJlZjU5ZDNmNy04OWFlLTQxYWQtYWVlNS1mMGZkODYzYTQ4YmQiLCJwZXJtaXNzaW9ucyI6Ik9XTkVSIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiN2I5ODViMmItNmZlYi00MGE1LWEzODEtOWJhNDBhNGM1NzZhIiwiYmlUb2tlbiI6ImFmYmRlMTcyLTM5OGEtMDI1OS0xZmE5LTY3ZmM2YzRkYjZlNCIsInNpdGVPd25lcklkIjoiZWY1OWQzZjctODlhZS00MWFkLWFlZTUtZjBmZDg2M2E0OGJkIiwic2l0ZU1lbWJlcklkIjoiZWY1OWQzZjctODlhZS00MWFkLWFlZTUtZjBmZDg2M2E0OGJkIiwiZXhwaXJhdGlvbkRhdGUiOiIyMDIwLTAxLTA5VDE1OjUyOjE2LjUxN1oiLCJsb2dpbkFjY291bnRJZCI6ImVmNTlkM2Y3LTg5YWUtNDFhZC1hZWU1LWYwZmQ4NjNhNDhiZCJ9&locale=ko&pageId=c1dmp&siteRevision=2&tz=Asia%2FSeoul&viewMode=preview&width=980 -->
+<html lang="ko"><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    
+
+      
+  
+  
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://www.wix.com/favicon.ico">
+
+
+
+
+  <script type="text/javascript">
+  (function(x,e,o,s,n){var a=window.fedops||{};a.apps=a.apps||{};a.apps[x]={startLoadTime:e&&e.now&&e.now()};try{a.sessionId=o.getItem("fedops.logger.sessionId")}catch(x){}a.sessionId=a.sessionId||"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(x){var e=s()*16|0,o=x=="x"?e:e&3|8;return o.toString(16)});window.fedops=a;var d="//frog.wix.com/fed?appName="+x+"&src=72&evid=14&session_id="+a.sessionId+"&_="+s();if(!!n&&!!n.sendBeacon){n.sendBeacon(d)}else{(new Image).src=d}})('communities-blog-custom-feed-widget',window.performance,window.localStorage,Math.random,window.navigator);
+</script>
+
+
+
+
+      
+      
+<script>
+  try {
+    if (window.parent) {
+      var msgSent = false;
+      var vars = window.location.search.replace('?', '').split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var arr = vars[i].split('=');
+        if (arr[0] == 'compId') {
+          window.parent.postMessage('{"intent":"TPA2","callId":1,"type":"appIsAlive","compId":"' + arr[1] + '","deviceType":"desktop","data":{"version":"1.66.0"}}', '*')
+          msgSent = true;
+        }
+      }
+      if (!msgSent) {
+        console.info('couldn\'t find compId in', window.location);
+      }
+    }
+  } catch (e) {
+    console.error('Error posting keep alive msg', e);
+  }
+</script>
+
+      
+
+      
+        <script src="./polyfill.min.js(1).다운로드" crossorigin=""></script>
+
+        
+    <script src="./bundle.min.js(1).다운로드" crossorigin="anonymous"></script>
+    <script>
+      (function initSentry() {
+        function isDuplexerError(event) {
+          try {
+            var stackFrames = event.exception.values[0].stacktrace.frames;
+            return /@wix\/wix-duplexer-js/.test(stackFrames[stackFrames.length - 1].filename);
+          } catch (error) {
+            return false;
+          }
+        }
+
+        Sentry.init({
+          dsn: 'https://71e32b4ded27414b90a94adb4e8b4d23@sentry.wixpress.com/94',
+          beforeSend: function beforeSend(event) {
+            return isDuplexerError(event) ? null : event;
+          },
+        });
+
+        Sentry.configureScope(function(scope) {
+          var p = function(x) { return x.split('=', 2).map(decodeURIComponent); };
+          var r = function(acc, x) { acc[x[0]] = x[1]; return acc; };
+          var q = location.search.replace(/^\?/, '').split('&').map(p).reduce(r, {});
+          scope.setUser({'id': 'ef59d3f7-89ae-41ad-aee5-f0fd863a48bd' })
+          scope.setTag('bundleName', 'custom-feed-widget');
+          scope.setTag('instanceId', '8f74e347-6e08-42dd-9159-4b7fe990a55a');
+          scope.setTag('viewMode', q.viewMode);
+          scope.setTag('deviceType', q.deviceType);
+          scope.setTag('locale', q.locale);
+        });
+      })();
+    </script>
+  
+        
+     <script src="./app.bundle.min.js.다운로드" crossorigin=""></script>
+     <script>
+        wixFullstoryLoader({ label: 'wix-blog', sample: 0.01 });
+     </script>
+  
+      
+
+      
+        <link rel="stylesheet" type="text/css" href="./languages(1).css">
+<link rel="stylesheet" type="text/css" href="./languages.css">
+<link rel="stylesheet" type="text/css" href="./custom-feed-widget.min.css">
+        
+
+<style wix-style="">
+  /* Widget styles */
+  .blog-background-color { background-color: rgba(255,255,255,0.15); }
+	.blog-background-color { background-color: rgba(255,255,255,0.15); }
+
+  /* Post styles */
+  .blog-text-color { color: rgba(65,65,65,1); }
+	.blog-text-color { color: rgba(65,65,65,1); }
+	.blog-text-border-color { border-color: rgba(65,65,65,1); }
+	.blog-text-border-color { border-color: rgba(65,65,65,1); }
+	.blog-text-background-color { background-color: rgba(65,65,65,1); }
+	.blog-text-background-color { background-color: rgba(65,65,65,1); }
+  .blog-icon-fill { fill: rgba(65,65,65,1); }
+	.blog-icon-fill { fill: rgba(65,65,65,1); }
+	.blog-icon-stroke { stroke: rgba(65,65,65,1); }
+	.blog-icon-stroke { stroke: rgba(65,65,65,1); }
+  .blog-separator-background-color { background-color: rgba(65,65,65,1); }
+	.blog-separator-background-color { background-color: rgba(65,65,65,1); }
+  .blog-inverted-separator-background-color { background-color: rgba(232,230,230,1); }
+	.blog-inverted-separator-background-color { background-color: rgba(232,230,230,1); }
+  .blog-card-background-color { background-color: rgba(232,230,230,1); }
+	.blog-card-background-color { background-color: rgba(232,230,230,1); }
+	.blog-card-fill { fill: rgba(232,230,230,1); }
+	.blog-card-fill { fill: rgba(232,230,230,1); }
+	.blog-card-stroke { stroke: rgba(232,230,230,1); }
+	.blog-card-stroke { stroke: rgba(232,230,230,1); }
+	.blog-card-color { color: rgba(232,230,230,1); }
+	.blog-card-color { color: rgba(232,230,230,1); }
+  .blog-card-border-color { border-color: rgba(232,230,230,0.75); }
+	.blog-card-border-color { border-color: rgba(232,230,230,0.75); }
+  .blog-post-title-color { color: rgba(65,65,65,1); }
+	.blog-post-title-color { color: rgba(65,65,65,1); }
+  .blog-post-image-overlay-background-color { background-color: rgba(0,0,0,0.35); }
+	.blog-post-image-overlay-background-color { background-color: rgba(0,0,0,0.35); }
+
+  .blog-post-title-font { font:normal normal normal 28px/1.4em proxima-n-w01-reg,sans-serif; font-size: 28px; line-height: normal; }
+	.blog-post-title-font { font:normal normal normal 28px/35px bm-hanna,sans-serif; line-height: normal; }
+	.blog-post-title-font { font:normal normal normal 28px/35px bm-hanna,sans-serif; line-height: normal; }
+  .blog-post-description-font { font:normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif; font-size: 16px; line-height: normal; }
+	.blog-post-description-font { font:normal normal normal 16px/20px bm-hanna,sans-serif; line-height: normal; }
+	.blog-post-description-font { font:normal normal normal 16px/20px bm-hanna,sans-serif; line-height: normal; }
+
+  /* Button styles */
+  .blog-button-primary-text-color { color: #FFFFFF; }
+	.blog-button-primary-text-color { color: #FFFFFF; }
+	.blog-button-primary-text-background-color { background-color: #FFFFFF; }
+	.blog-button-primary-text-background-color { background-color: #FFFFFF; }
+  .blog-button-primary-icon-fill { fill: #FFFFFF; }
+	.blog-button-primary-icon-fill { fill: #FFFFFF; }
+  .blog-button-secondary-text-color { color: #7FCCF7; }
+	.blog-button-secondary-text-color { color: #7FCCF7; }
+  .blog-button-secondary-icon-fill { fill: #7FCCF7; }
+	.blog-button-secondary-icon-fill { fill: #7FCCF7; }
+  .blog-button-color { color: #7FCCF7; }
+	.blog-button-color { color: #7FCCF7; }
+	.blog-button-background-color { background-color: #7FCCF7; }
+	.blog-button-background-color { background-color: #7FCCF7; }
+	.blog-button-border-color { border-color: #7FCCF7; }
+	.blog-button-border-color { border-color: #7FCCF7; }
+	.blog-button-fill { fill: #7FCCF7; }
+	.blog-button-fill { fill: #7FCCF7; }
+	.blog-button-stroke { stroke: #7FCCF7; }
+	.blog-button-stroke { stroke: #7FCCF7; }
+  .is-desktop .blog-button-hover-color:hover { color: rgba(127,204,247,1); }
+	.is-desktop .blog-button-hover-color:hover { color: rgba(127,204,247,1); }
+	.is-desktop .blog-button-hover-fill:hover { fill: rgba(127,204,247,1); }
+	.is-desktop .blog-button-hover-fill:hover { fill: rgba(127,204,247,1); }
+  .is-desktop .blog-link-hover-color:hover { color: rgba(127,204,247,1); }
+	.is-desktop .blog-link-hover-color:hover { color: rgba(127,204,247,1); }
+	.is-desktop .blog-link-hover-fill:hover { fill: rgba(127,204,247,1); }
+	.is-desktop .blog-link-hover-fill:hover { fill: rgba(127,204,247,1); }
+  .is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: rgba(127,204,247,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-color { color: rgba(127,204,247,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: rgba(127,204,247,1); }
+	.is-desktop .blog-hover-container:hover .blog-hover-container-element-fill { fill: rgba(127,204,247,1); }
+  .is-desktop .blog-button-hover-after-border-color:hover::after { border-color: #7FCCF7; }
+	.is-desktop .blog-button-hover-after-border-color:hover::after { border-color: #7FCCF7; }
+  .blog-button-after-border-color::after { border-color: #7FCCF7; }
+	.blog-button-after-border-color::after { border-color: #7FCCF7; }
+
+  /* Fixed styles */
+  .blog-default-card-background-color { background-color: #FFFFFF; }
+	.blog-default-card-background-color { background-color: #FFFFFF; }
+  .blog-default-button-background-color { background-color: #7FCCF7; }
+	.blog-default-button-background-color { background-color: #7FCCF7; }
+  .blog-quote-border-color { border-color: #155DE9; }
+	.blog-quote-border-color { border-color: #155DE9; }
+</style>
+
+      
+    <style wix-style="">.Title{ font:normal normal normal 40px/1.4em proxima-n-w01-reg,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal normal 28px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-XL{ font:normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-L{ font:normal normal normal 40px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-M{ font:normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif; } .Heading-S{ font:normal normal normal 22px/1.4em proxima-n-w01-reg,sans-serif; } .Body-L{ font:normal normal normal 17px/1.4em proxima-n-w01-reg,sans-serif; } .Body-M{ font:normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif; } .Body-S{ font:normal normal normal 14px/1.4em proxima-n-w01-reg,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./languages.css"><style>:focus {
+    outline: none;
+}
+
+.js-focus-visible .focus-visible:focus,
+.js-focus-visible .focus-visible:focus ~ .wixSdkShowFocusOnSibling
+{
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+</style><script src="./focus-visible.min.js.다운로드" id="dynamic_script_FOCUS_VISIBLE"></script></head>
+
+    <body class="oSNla js-focus-visible">
+      
+
+      <div id="root"><div id="direction-provider-wrapper"><div dir="ltr"><div class="_2oAx1 blog-background-color is-desktop app-desktop" id="content-wrapper"><div class="cSnEi"><div></div><div><div><div class="_3sa-M _2QKd6 post-list _2m0HZ"><div><div class="_2QKd6"><div class="tZgfA _2QKd6"><div class="_sg9w"><div class="_1GFPu"><article class="dJBp- _2bQy8 blog-post-description-font blog-text-color blog-card-background-color blog-card-border-color post-list-item blog-hover-container _1ZW5T" tabindex="0" style="border-width:1px" data-hook="post-list-item"><div class="_3kcJF _2bQy8 _1Twkt _1ZW5T"><div class="blog-post-description-font"><div class="_3CJpQ eRN8O blog-post-metadata-font post-header"><div class="gui6j"><div class="_2wbeQ"><ul class="_1ReRx _2qkGq"><li><span class="post-metadata__date time-ago" data-hook="time-ago">2분 전</span></li><li><div class="_2yYN5 e8kGb blog-separator-background-color"></div></li><li><span class="post-metadata__readTime" data-hook="time-to-read">1분</span></li></ul></div></div></div></div><a class="_1NTXA _2bQy8" href="https://social-blog.wix.com/__%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_top"><div class="_3sZWk blog-post-title-font _2bQy8" data-hook="post-title"><h2 class="_2MNte post-title post-title__text blog-post-title-color blog-hover-container-element-color" data-hook="post-title"><div style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2;">테스트</div></h2></div><div class="-RDEl _2bQy8 blog-post-description-font" data-hook="post-description"><div class="_1Uunh post-excerpt"><div style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 2;"><div class="AB7h6" data-hook="post-description">테스트</div></div></div></div></a><div class="_1vZkh _2bQy8 _1ZW5T _1gura"><div class="_2Dps0 _3CI45 _2bQy8 blog-separator-background-color"></div><div class="blog-post-description-font"><div class="fhim2 blog-post-description-font blog-text-color post-footer"><div class="_60xHi"><div class="MEOqZ post-stats" data-hook="post-stats"><span>조회 0회</span><a class="_3EfO5" href="https://social-blog.wix.com/__%ED%85%8C%EC%8A%A4%ED%8A%B8" target="_top"><span data-hook="write-comment__label" class="_24h-e">댓글</span></a></div></div><div class="vP6YT"><button class="_3Bdxz post-footer__like-button"><span class="_3BTGY" data-hook="like-button-with-count__like-count"><div class="like-button _7QZoA" aria-label="좋아요로 표시되지 않은 게시물" role="button" data-hook="like-button"><div class="JuFMG"><div class="_3GAmo"></div></div><div class="_1UeeA"><div class="_3GAmo"></div></div><div class="_3KlwM"><div class="_3GAmo"></div></div><div class="uanT3"><div class="_3GAmo"></div></div><div class="_2x4gn"></div><svg xmlns="http://www.w3.org/2000/svg" width="19" viewBox="0 0 19 19" role="img"><path d="M9.44985848,15.5291774 C9.43911371,15.5362849 9.42782916,15.5449227 9.41715267,15.5553324 L9.44985848,15.5291774 Z M9.44985848,15.5291774 L9.49370677,15.4941118 C9.15422701,15.7147757 10.2318883,15.0314406 10.7297038,14.6971183 C11.5633567,14.1372547 12.3827081,13.5410755 13.1475707,12.9201001 C14.3829188,11.9171478 15.3570936,10.9445466 15.9707237,10.0482572 C16.0768097,9.89330422 16.1713564,9.74160032 16.2509104,9.59910798 C17.0201658,8.17755699 17.2088969,6.78363112 16.7499013,5.65913129 C16.4604017,4.81092573 15.7231445,4.11008901 14.7401472,3.70936139 C13.1379564,3.11266008 11.0475663,3.84092251 9.89976068,5.36430396 L9.50799408,5.8842613 L9.10670536,5.37161711 C7.94954806,3.89335486 6.00516066,3.14638251 4.31830373,3.71958508 C3.36517186,4.00646284 2.65439601,4.72068063 2.23964629,5.77358234 C1.79050315,6.87166888 1.98214559,8.26476279 2.74015555,9.58185512 C2.94777753,9.93163559 3.23221417,10.3090129 3.5869453,10.7089994 C4.17752179,11.3749196 4.94653811,12.0862394 5.85617417,12.8273544 C7.11233096,13.8507929 9.65858244,15.6292133 9.58280954,15.555334 C9.53938013,15.5129899 9.48608859,15.5 9.50042471,15.5 C9.5105974,15.5 9.48275828,15.5074148 9.44985848,15.5291774 Z"></path></svg></div></span></button></div></div></div></div></div></article></div></div></div></div><div></div></div></div></div></div></div></div></div></div></div>
+
+      
+        <script>
+  var p = function(x) { return x.split('=', 2).map(decodeURIComponent); };
+  var r = function(acc, x) { acc[x[0]] = x[1]; return acc; };
+  var q = location.search.replace(/^\?/, '').split('&').map(p).reduce(r, {});
+  window.parent.postMessage(
+  '{"intent":"TPA2","callId":1,"type":"applicationLoadingStep","compId":"' + q.compId + '","deviceType":"' + q.deviceType + '","data":{"version":"1.94.0", "args":{"stage":"firstMeaningfulPaint", "stageNum":0}}}', '*'
+  );
+</script>
+
+      
+
+      
+        <script>
+(function() {
+    if (!(window.createImageBitmap && window.fetch)) return false;
+    fetch('data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=')
+    .then(function(r){return r.blob();})
+    .then(createImageBitmap)
+    .then(function() {return true;}, function() {return false;})
+    .then(function(isWebPSupported){window.__IS_WEBP_SUPPORTED__ = isWebPSupported});
+})();
+</script>
+
+        <script>
+  window.wixTpaWindowResize = {
+    elSelector: '#content-wrapper',
+    enableViewportFix: false,
+  };
+</script>
+<script>!function(){"use strict";!function(e){var n=e.wixTpaWindowResize;if(n){if(!n.elSelector)return console.error("Aborting window resize handler: you must specify a css selector");var i,t=decodeURIComponent(e.location.search).split("&").reduce(function(e,n){var i=n.split("=");return e[i[0]]=i[1],e},{}),o=320,r=n.elSelector,a=n.interval||160,s=n.minHeight||null,c=n.disableOnMobile||!1,l=n.enableViewportFix||!1,d="mobile"===t.deviceType,u=["editor","preview"].indexOf(t.viewMode)>-1,h=n.onInit||function(){},f=!1!==n.listenOnInit,v=!0===n.log;d&&c||(f&&g(),h({startListening:g,stopListening:m}))}function p(e){v&&console.log("window-resize-handler ",e)}function w(n){var i=n.scrollHeight*(d&&l?o/(u?o:function(){var n=!1;if(void 0!==e.orientation)n=90===e.orientation||-90===e.orientation;else{var i=e.matchMedia("(orientation: landscape)");n=!(!i||!0!==i.matches)}return n}()?Math.max(e.screen.width,e.screen.height):e.screen.width):1);return s?Math.max(i,s):i}function g(){var n=0;i=e.setInterval(function(){var i=e.document.querySelector(r);if(i){var t=w(i);n===t&&e.innerHeight===t||(n=t,function(n){e.Wix?(p("window.Wix.setHeight"),e.Wix.setHeight(n)):(p("window.parent.postMessage"),e.parent.postMessage('{"intent":"TPA2","callId":1,"type":"heightChanged","compId":"'+e.name+'","deviceType":"desktop","data":{"version":"1.66.0", "args":{"height":"'+n+'", "overflow":"false"}}}',"*"))}(t))}},a)}function m(){e.clearInterval(i)}}(window)}();
+</script>
+
+
+        <script src="./wix-private.min.js.다운로드" crossorigin=""></script>
+
+
+        <script src="./react.production.min.js.다운로드" crossorigin=""></script>
+<script src="./react-dom.production.min.js.다운로드" crossorigin=""></script>
+
+        <script src="./lodash.min.js(1).다운로드" crossorigin=""></script>
+
+
+        <script src="./ReactPlayer.js.다운로드" crossorigin=""></script>
+
+
+        <script src="./custom-feed-widget.bundle.min.js.다운로드" crossorigin="" defer=""></script>
+
+        
+
+        <script>
+          window.__INITIAL_STATE__ = {"appData":{"_id":"8f74e347-6e08-42dd-9159-4b7fe990a55a","label":"Wix 블로그 둘러보기","menuLabel":"전체 게시물","description":"다양한 Wix 블로그 기능 및 게시물 예시를 확인하려면 사이트 미리보기를 클릭하세요.","language":"ko","cover":{"original_file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","file_name":"a27d24_85296a50517f45428acb01b9c4911ba1~mv2_d_3992_1513_s_2.jpg","width":3992,"height":1513},"overlayColor":{"color":"#ffffff","opacity":0.35},"backgroundColor":{"color":"#FFFFFF","opacity":1},"coverType":"image","textColor":{"color":"#000000","opacity":1},"postPageEnabled":true,"sendEmailsToSiteSubscribers":false},"appSettings":{"colorPresets":[{"name":"color_1","value":"#FFFFFF","reference":"white\u002Fblack"},{"name":"color_2","value":"#000000","reference":"black\u002Fwhite"},{"name":"color_3","value":"#ED1C24","reference":"primery-1"},{"name":"color_4","value":"#0088CB","reference":"primery-2"},{"name":"color_5","value":"#FFCB05","reference":"primery-3"},{"name":"color_11","value":"#FFFFFF","reference":"color-1"},{"name":"color_12","value":"#E8E6E6","reference":"color-2"},{"name":"color_13","value":"#C7C7C7","reference":"color-3"},{"name":"color_14","value":"#999997","reference":"color-4"},{"name":"color_15","value":"#414141","reference":"color-5"},{"name":"color_16","value":"#D9F0FD","reference":"color-6"},{"name":"color_17","value":"#BEE5FB","reference":"color-7"},{"name":"color_18","value":"#7FCCF7","reference":"color-8"},{"name":"color_19","value":"#40667C","reference":"color-9"},{"name":"color_20","value":"#213D4D","reference":"color-10"},{"name":"color_21","value":"#ADC6F8","reference":"color-11"},{"name":"color_22","value":"#83A8F0","reference":"color-12"},{"name":"color_23","value":"#155DE9","reference":"color-13"},{"name":"color_24","value":"#0E3E9B","reference":"color-14"},{"name":"color_25","value":"#071F4E","reference":"color-15"},{"name":"color_26","value":"#C4AEDD","reference":"color-16"},{"name":"color_27","value":"#9C7FBA","reference":"color-17"},{"name":"color_28","value":"#663898","reference":"color-18"},{"name":"color_29","value":"#442565","reference":"color-19"},{"name":"color_30","value":"#221333","reference":"color-20"},{"name":"color_31","value":"#E5FAD1","reference":"color-21"},{"name":"color_32","value":"#CAE5AF","reference":"color-22"},{"name":"color_33","value":"#9BCB6C","reference":"color-23"},{"name":"color_34","value":"#4E6636","reference":"color-24"},{"name":"color_35","value":"#27331B","reference":"color-25"}],"textPresets":{"Title":{"editorKey":"font_0","lineHeight":"1.4em","style":"normal","weight":"normal","size":"40px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 40px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Menu":{"editorKey":"font_1","lineHeight":"1.4em","style":"normal","weight":"normal","size":"16px","fontFamily":"din-next-w01-light","value":"font:normal normal normal 16px\u002F1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;"},"Page-title":{"editorKey":"font_2","lineHeight":"1.4em","style":"normal","weight":"normal","size":"28px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 28px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Heading-XL":{"editorKey":"font_3","lineHeight":"1.4em","style":"normal","weight":"normal","size":"60px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 60px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Heading-L":{"editorKey":"font_4","lineHeight":"1.4em","style":"normal","weight":"normal","size":"40px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 40px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Heading-M":{"editorKey":"font_5","lineHeight":"1.4em","style":"normal","weight":"normal","size":"25px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 25px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Heading-S":{"editorKey":"font_6","lineHeight":"1.4em","style":"normal","weight":"normal","size":"22px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 22px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Body-L":{"editorKey":"font_7","lineHeight":"1.4em","style":"normal","weight":"normal","size":"17px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 17px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Body-M":{"editorKey":"font_8","lineHeight":"1.4em","style":"normal","weight":"normal","size":"15px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 15px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Body-S":{"editorKey":"font_9","lineHeight":"1.4em","style":"normal","weight":"normal","size":"14px","fontFamily":"proxima-n-w01-reg","value":"font:normal normal normal 14px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"Body-XS":{"editorKey":"font_10","lineHeight":"1.4em","style":"normal","weight":"normal","size":"12px","fontFamily":"din-next-w01-light","value":"font:normal normal normal 12px\u002F1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;"}},"updatedAt":1578570745494,"style":{"colors":{"post-backgroundColor":{"themeName":"color-2","value":"rgba(232,230,230,1)"},"post-borderColor":{"themeName":"color-2","value":"rgba(232,230,230,0.75)"},"post-descriptionColo-textOnImager":{"value":"rgba(255,255,255,1)"},"post-descriptionColor-standard":{"themeName":"color-5","value":"rgba(65,65,65,1)"},"post-hoverColor-standard":{"themeName":"color-8","value":"rgba(127,204,247,1)"},"post-imageOverlayColor":{"value":"rgba(0,0,0,0.35)"},"post-titleColo-textOnImager":{"value":"rgba(255,255,255,1)"},"post-titleColor-standard":{"themeName":"color-5","value":"rgba(65,65,65,1)"},"widget-backgroundColor":{"themeName":"color-1","value":"rgba(255,255,255,0.15)"},"post-titleColor":{"themeName":"color-5","value":"rgba(65,65,65,1)"},"post-descriptionColor":{"themeName":"color-5","value":"rgba(65,65,65,1)"},"post-hoverColor":{"themeName":"color-8","value":"rgba(127,204,247,1)"}},"numbers":{"list-numberOfPosts":5,"list-layoutId":6,"post-borderWidth":1},"booleans":{"blog-isAuthorNameEnabled":false,"blog-isPostDateEnabled":true},"fonts":{"ignored-as-color-picker-does-not-support-info-text":{"family":"proxima-n-w01-reg","displayName":"Page Title","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Page-title","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F1.4em proxima-n-w01-reg,sans-serif;"},"post-descriptionFont-standard":{"family":"bm-hanna","displayName":"Paragraph 2","style":{"bold":false,"italic":false,"underline":false},"size":16,"preset":"Custom","editorKey":"font_8","fontStyleParam":true,"value":"font:normal normal normal 16px\u002F20px bm-hanna,sans-serif;"},"post-descriptionFont-textOnImage":{"family":"proxima-n-w01-reg","displayName":"Paragraph 2","style":{"bold":false,"italic":false,"underline":false},"size":16,"preset":"Custom","editorKey":"font_8","fontStyleParam":true,"value":"font:normal normal normal 16px\u002F20px proxima-n-w01-reg,sans-serif;"},"post-titleFont-standard":{"family":"bm-hanna","displayName":"Page Title","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Custom","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F35px bm-hanna,sans-serif;"},"post-titleFont-textOnImage":{"family":"proxima-n-w01-reg","displayName":"Page Title","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Custom","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F35px proxima-n-w01-reg,sans-serif;"},"post-titleFont":{"family":"bm-hanna","displayName":"Page Title","style":{"bold":false,"italic":false,"underline":false},"size":28,"preset":"Custom","editorKey":"font_2","fontStyleParam":true,"value":"font:normal normal normal 28px\u002F35px bm-hanna,sans-serif;"},"post-descriptionFont":{"family":"bm-hanna","displayName":"Paragraph 2","style":{"bold":false,"italic":false,"underline":false},"size":16,"preset":"Custom","editorKey":"font_8","fontStyleParam":true,"value":"font:normal normal normal 16px\u002F20px bm-hanna,sans-serif;"}},"googleFontsCssUrl":"","uploadFontFaces":"","cssUrls":["\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fsanta-resources\u002Fresources\u002Fviewer\u002Fuser-site-fonts\u002Fv5\u002Flanguages.css","\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fsanta-resources\u002Fresources\u002Fviewer\u002Fuser-site-fonts\u002Fv7\u002Flanguages.css"]},"custom":{"widget-categoryId":"5e17139ee485d300170616de"}},"commonSettings":{},"auth":{"currentUser":{"_id":"5e17139e406638001785a38b","name":"Infinite TEAM","image":"https:\u002F\u002Flh3.googleusercontent.com\u002Fa-\u002FAAuE7mBj_5-hPyhMgcxjyrD5diHXL8vToQVtbtAGBFDV%3Ds96-c","cover":null,"siteMemberId":"ef59d3f7-89ae-41ad-aee5-f0fd863a48bd","isOwner":true,"isBlocked":false,"appStore":{"14bcded7-0066-7c35-14d7-466cb3f09103":{"permissions":{"role":"owner"}}},"slug":""},"isAuthenticated":true,"isAuthenticating":false},"communitiesContext":{"14ad9202-3dd3-128a-57bd-e5675fd7e313":{"isInstalled":false,"baseUrl":"https:\u002F\u002Fapps.wix.com\u002Fmembers","baseStaticUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fcommunities-members-app\u002F1.381.0\u002F"},"14cc59bc-f0b7-15b8-e1c7-89ce41d0e0c9":{"isInstalled":false}},"experiments":{"se_newBlogQuickMigration":"new","specs.wixBlog.ImportFromWordPress":"true","specs.wixBlog.SchedulePost":"true","specs.wixBlog.ImportFromWordPressInsideMenu":"false","specs.wixBlog.InstallWithoutApps":"true","specs.wixBlog.ToggleCategoryLabels":"true","specs.wixBlog.PublishToDuplexer":"true","specs.media.MediaManager3":"true","specs.wixBlog.CollectMetrics":"false","specs.wixBlog.ProvisioningModal":"true","specs.wixBlog.ProvidePathToPost":"true","specs.wixBlog.BMViewPost":"true","specs.wixBlog.MoveToTrash":"true","specs.wixBlog.DisableBeaconInOneApp":"true","specs.wixBlog.MobileLayoutUpdatedStyle":"true","specs.wixBlog.MobilePostFontSettings":"true","specs.wixBlog.BMRevertPostToDraft":"true","specs.wixBlog.PostPageMigration":"true","specs.wixBlog.MobileFeedFontSettings":"true","specs.wixBlog.RcvTextColorPlugin":"true","specs.wixBlog.ProdOOI":"false","specs.wixBlog.SendEmailsThroughPing":"true","specs.wixBlog.NextProdOOI":"false","com.wixpress.communities.blog.subscription.experiments.AutoSubscribeToBlogNotifications":"true","specs.wixBlog.IsPagesPanelEnabled":"true","specs.wixBlog.UsePrecomputedPostFields":"true","specs.wixBlog.ProvisionPostPage":"true","specs.wixBlog.DisableMembersInstallForADI":"true","specs.wixBlog.ValidateViewMode":"false","specs.wixBlog.ToggleSocialShare":"true","specs.wixBlog.RCELineSize":"true","specs.wixBlog.ExcludePostContent":"true","specs.wixBlog.InlineCss":"false","specs.wixBlog.DisplayCategoriesFromPost":"true","specs.wixBlog.NewComposerActionBar":"true","specs.wixBlog.ProvisionWithoutNavigation":"true","specs.wixBlog.PinterestToggle":"true","se_santaMembers":"new","specs.wixBlog.ToggleAuthorBadge":"true","specs.wixBlog.CommentCounterOff":"false","specs.wixBlog.AnonymousLikes":"true","specs.wixBlog.BMShareAfterPublishPostAction":"true","specs.wixBlog.EmotionInstancePerRequest":"true","specs.wixBlog.RemoveEureka":"true","specs.wixBlog.MobileDisplayToggles":"true","specs.wixBlog.BusinessManagerFixedThemeStyles":"true","specs.wixBlog.MoveToTrashOnPostDeletion":"true","specs.wixBlog.TogglePostTitle":"true","specs.blogImporter.EnableRollbackOfMigrationsBM":"false","specs.wixBlog.MobileLayoutSettings":"true","specs.wixBlog.CreateOfflineUser":"true","specs.wixBlog.SendEmailsToSiteSubscribersInBM":"true","specs.wixBlog.WixAppPromoTab":"true","specs.wixBlog.SeparateTranslationsForRecentPosts":"true","specs.wixBlog.MembersAreaInstallV2":"true","specs.wixBlog.ResponsiveLayout":"false","specs.wixBlog.MobileTOILayout":"true","specs.wixBlog.RcvGiphyPlugin":"false","specs.wixBlog.UsePingSubscriptionService":"true","specs.wixBlog.OnBMCloseUpdateWidgets":"false","specs.wixBlog.UseSiteQueryService":"false","specs.wixBlog.CanonicalUrl":"false","specs.wixBlog.BMShareAfterPublish":"false","specs.wixBlog.UseRelooseInBlogApp":"true","specs.wixBlog.OptimizeCustomFeedBundle":"true","specs.wixBlog.AnalyticsLinkInBM":"true","specs.wixBlog.BMPreviewPost":"true","specs.wixBlog.UseDuplexer":"true","specs.wixBlog.ConditionallyIncludeRce":"false","specs.wixBlog.RceGiphyPlugin":"true","specs.wixBlog.MetaSiteServiceUseReloose":"true","specs.wixBlog.ShareOnLinkedIn":"true","specs.wixBlog.BusinessManagerNewToastAPI":"true","specs.wixBlog.TogglePostActionsMenu":"true","specs.wixBlog.RceTextColorPlugin":"true","specs.wixBlog.SeparatePublishDateReadTimeToggles":"true","specs.wixBlog.SeparateRecentPostsWidgetBundles":"true","specs.wixBlog.PostSettingsAdvancedStyles":"true"},"isAppLoaded":false,"isDemoMode":false,"isLoaded":{"category":{"5e17139ee485d300170616de":true}},"isLoading":{"category":{"5e17139ee485d300170616de":false}},"pagination":{"comments":{"entitiesByPage":{}},"posts":{"entitiesByPage":{"1":["5e17139ee485d300170616e7"]},"currentPage":1,"pageSize":5,"entityCount":1},"posts-unpublished":{"entitiesByPage":{}},"posts-published":{"entitiesByPage":{}},"posts-scheduled":{"entitiesByPage":{}},"posts-deleted":{"entitiesByPage":{}}},"posts":{"5e17139ee485d300170616e7":{"_id":"5e17139ee485d300170616e7","instanceId":"8f74e347-6e08-42dd-9159-4b7fe990a55a","status":"published","categoryIds":["5e17139ee485d300170616de"],"createdDate":"2020-01-09T11:50:54.657Z","lastPublishedDate":"2020-01-09T11:50:54.658Z","slugs":["__테스트"],"seoSlug":"__테스트","ownerId":"5e17139e406638001785a38b","ownerSiteMemberId":"ef59d3f7-89ae-41ad-aee5-f0fd863a48bd","lastWriterId":"5e17139e406638001785a38b","isPinned":false,"isCommentsDisabled":false,"likeCount":0,"viewCount":0,"totalComments":0,"lastActivityDate":"2020-01-09T11:50:54.658Z","isFeatured":false,"firstPublishedDate":"2020-01-09T11:50:54.658Z","seoShowInSearch":true,"seoShowSnippetInSearch":true,"title":"테스트","timeToRead":1,"excerpt":"테스트","coverImage":{"shouldRender":false,"isEnabled":true,"isCustom":false,"isResolved":true},"slug":"__테스트","hasUnpublishedChanges":false,"draft":{"title":"테스트","categoryIds":["5e17139ee485d300170616de"],"seoSlug":"__테스트","editedDate":"2020-01-09T11:50:54.658Z","isCommentsDisabled":false,"firstPublishedDate":"2020-01-09T11:50:54.658Z","ownerId":"5e17139e406638001785a38b","ownerSiteMemberId":"ef59d3f7-89ae-41ad-aee5-f0fd863a48bd","isFeatured":false,"seoShowInSearch":true,"seoShowSnippetInSearch":true},"isLiked":false,"owner":{"_id":"5e17139e406638001785a38b","name":"Infinite TEAM","image":"https:\u002F\u002Flh3.googleusercontent.com\u002Fa-\u002FAAuE7mBj_5-hPyhMgcxjyrD5diHXL8vToQVtbtAGBFDV%3Ds96-c","cover":null,"siteMemberId":"ef59d3f7-89ae-41ad-aee5-f0fd863a48bd","isOwner":true,"isBlocked":false,"appStore":{"14bcded7-0066-7c35-14d7-466cb3f09103":{"permissions":{"role":"owner"}}},"slug":""},"isSubscribed":true,"readTime":1}},"routing":{"locationBeforeTransitions":{"pathname":"\u002Fcustom-feed-widget","search":"","hash":"","action":"POP","key":null,"query":{}}},"searchParams":{"cacheKiller":"1578570741403","compId":"comp-jq52fkjv","currency":"KRW","deviceType":"desktop","height":"306","instance":"tFcU4ln3Y4p6luaYoJ8osSNCi0vQLqmJW7HbrBzxId4.eyJpbnN0YW5jZUlkIjoiOGY3NGUzNDctNmUwOC00MmRkLTkxNTktNGI3ZmU5OTBhNTVhIiwiYXBwRGVmSWQiOiIxNGJjZGVkNy0wMDY2LTdjMzUtMTRkNy00NjZjYjNmMDkxMDMiLCJtZXRhU2l0ZUlkIjoiMjBjOTAyMzUtNTc4Mi00MDg0LThlZjAtMmM4Mzg1ZGQxM2JlIiwic2lnbkRhdGUiOiIyMDIwLTAxLTA5VDExOjUyOjE2LjUxN1oiLCJ1aWQiOiJlZjU5ZDNmNy04OWFlLTQxYWQtYWVlNS1mMGZkODYzYTQ4YmQiLCJwZXJtaXNzaW9ucyI6Ik9XTkVSIiwiZGVtb01vZGUiOmZhbHNlLCJvcmlnaW5JbnN0YW5jZUlkIjoiN2I5ODViMmItNmZlYi00MGE1LWEzODEtOWJhNDBhNGM1NzZhIiwiYmlUb2tlbiI6ImFmYmRlMTcyLTM5OGEtMDI1OS0xZmE5LTY3ZmM2YzRkYjZlNCIsInNpdGVPd25lcklkIjoiZWY1OWQzZjctODlhZS00MWFkLWFlZTUtZjBmZDg2M2E0OGJkIiwic2l0ZU1lbWJlcklkIjoiZWY1OWQzZjctODlhZS00MWFkLWFlZTUtZjBmZDg2M2E0OGJkIiwiZXhwaXJhdGlvbkRhdGUiOiIyMDIwLTAxLTA5VDE1OjUyOjE2LjUxN1oiLCJsb2dpbkFjY291bnRJZCI6ImVmNTlkM2Y3LTg5YWUtNDFhZC1hZWU1LWYwZmQ4NjNhNDhiZCJ9","locale":"ko","pageId":"c1dmp","siteRevision":"2","tz":"Asia\u002FSeoul","viewMode":"preview","width":"980"},"users":{"5e17139e406638001785a38b":{"_id":"5e17139e406638001785a38b","name":"Infinite TEAM","image":"https:\u002F\u002Flh3.googleusercontent.com\u002Fa-\u002FAAuE7mBj_5-hPyhMgcxjyrD5diHXL8vToQVtbtAGBFDV%3Ds96-c","cover":null,"siteMemberId":"ef59d3f7-89ae-41ad-aee5-f0fd863a48bd","isOwner":true,"isBlocked":false,"appStore":{"14bcded7-0066-7c35-14d7-466cb3f09103":{"permissions":{"role":"owner"}}},"slug":""}},"viewMode":"preview"};
+          window.__CONFIG__ = {"bundleName":"custom-feed-widget","fedopsAppName":"communities-blog-custom-feed-widget","imageHost":"static.wixstatic.com","videoHost":"video.wixstatic.com","sectionUrl":"","instanceId":"8f74e347-6e08-42dd-9159-4b7fe990a55a","duplexer":{"url":"social-blog.wix.com\u002F_api\u002Fwix-duplexer-sockets-server","key":"8dd942aa-6255-4bb0-b004-8bd6cf2f6b35"},"isInEditor":false,"isInPreview":true,"categoryPath":"categories","useCategoryMenuLabelForMetadataTitle":false,"editorConfig":{"enableLinkify":true,"mediaToken":"JWS.eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Im5FUXljQzlOIn0.eyJpYXQiOjE1Nzg1NzA3NDUsImRhdGEiOiJ7XCJ1c2VySWRcIjpcImVmNTlkM2Y3LTg5YWUtNDFhZC1hZWU1LWYwZmQ4NjNhNDhiZFwiLFwibWV0YXNpdGVJZFwiOlwiMjBjOTAyMzUtNTc4Mi00MDg0LThlZjAtMmM4Mzg1ZGQxM2JlXCJ9IiwiZXhwIjoxNTc5NzgwMzQ1fQ.N4MfIhUJhjsFVeliF7upFrX-_vJwh80s8a_yvxqIyV0"},"isDevMode":false,"ampBaseUrl":false,"postPageSectionUrl":""};
+          window.__INITIAL_I18N__ = {"localeData":{"no-posts-feed.stay-tuned":"다음에 다시 확인해주세요.","view-count.label_plural":"조회 {{count, number}}회","comment-count.icon-aria-label":"댓글 수","badge.owner":"운영자","like-button.comment-is-liked":"좋아요로 표시된 댓글","no-posts-feed.on-the-way":"게시물 게시 예정","counter.count":"{{count, number}}개","view-count.label":"조회 {{count, number}}회","comment-count.label_plural":"댓글 {{count, number}}개","time-to-read.short-label":"{{minutes}}분","like-button.comment-is-unliked":"좋아요로 표시되지 않은 댓글","like-button.total-likes":"좋아요","like-button.is-unliked":"좋아요로 표시되지 않은 게시물","write-comment.write-a-comment":"댓글","badge.admin":"운영자","like-button.is-liked":"좋아요로 표시된 게시물","video-embed.load-video":"Load video","date":"{{time, date}}","account-suspended.contact-owner":"자세한 사항은 사이트 소유자에게 문의하세요.","aria-label.authors-picture":"작성자 이미지","fullDate":"{{time, fullDate}}","video-embed.disabled-tooltip":"동영상을 재생하려면 라이브 사이트에서 해당 게시물을 열람하세요.","badge.editor":"편집자","time-relative":"{{time, timeRelative}}","badge.writer":"동물트레이너","like-button.total-likes_plural":"좋아요","comment-count.label":"댓글 {{count, number}}개","account-suspended.account-suspended":"계정 사용이 일시 정지되었습니다.","time-to-read.label":"{{minutes}}분 분량"},"lang":"ko"};
+          window.__STATICS_VERSION__ = '1.1654.0';
+          window.__WS_CONFIG__ = {"url":"https:\u002F\u002Fforums.wix.com\u002Fwix-ws-server","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YW5jZUlkIjoiOGY3NGUzNDctNmUwOC00MmRkLTkxNTktNGI3ZmU5OTBhNTVhIiwiYXBpS2V5IjoiNTQ3NmQ5MjMtYWVmMy00NjMxLWFhM2ItODg4NjBmYmUxYjg4IiwiY2hhbm5lbHMiOlt7Im1hc2siOiJpbnN0YW5jZS04Zjc0ZTM0Ny02ZTA4LTQyZGQtOTE1OS00YjdmZTk5MGE1NWEvYmxvZyIsInJlcXVpcmVzQXV0aCI6bnVsbCwicmVjZWl2ZU93bk1lc3NhZ2VzIjpmYWxzZX0seyJtYXNrIjoiaW5zdGFuY2UtOGY3NGUzNDctNmUwOC00MmRkLTkxNTktNGI3ZmU5OTBhNTVhL2NhdGVnb3J5LShcXHcpIiwicmVxdWlyZXNBdXRoIjpudWxsLCJyZWNlaXZlT3duTWVzc2FnZXMiOmZhbHNlfSx7Im1hc2siOiJpbnN0YW5jZS04Zjc0ZTM0Ny02ZTA4LTQyZGQtOTE1OS00YjdmZTk5MGE1NWEvcG9zdC0oXFx3KSIsInJlcXVpcmVzQXV0aCI6bnVsbCwicmVjZWl2ZU93bk1lc3NhZ2VzIjpmYWxzZX0seyJtYXNrIjoidXNlci01ZTE3MTM5ZTQwNjYzODAwMTc4NWEzOGIiLCJyZXF1aXJlc0F1dGgiOm51bGwsInJlY2VpdmVPd25NZXNzYWdlcyI6ZmFsc2V9XSwicHJlc2VuY2VEYXRhIjp7Im5hbWUiOiJJbmZpbml0ZSBURUFNIn0sImlhdCI6MTU3ODU3MDc0NX0.Cll-EFIWw5ASTLgtWbaS341Et7IvoHGy3GPwRbdCGOo","communityToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YW5jZUlkIjoiOGY3NGUzNDctNmUwOC00MmRkLTkxNTktNGI3ZmU5OTBhNTVhIiwiYXBpS2V5IjoiYzhmZWZlZDctNjVmNi00Mzc4LWJiZDQtMjAzZTI1NmUzNmIwIiwiY2hhbm5lbHMiOlt7Im1hc2siOiJjb21tdW5pdHktdW5kZWZpbmVkIiwicmVxdWlyZXNBdXRoIjpudWxsLCJyZWNlaXZlT3duTWVzc2FnZXMiOmZhbHNlfV0sInByZXNlbmNlRGF0YSI6eyJuYW1lIjoiSW5maW5pdGUgVEVBTSJ9LCJpYXQiOjE1Nzg1NzA3NDV9.eflLwphuNQdqQN0O4vmeMSdxTeujAhxuYJXf-acH4-g"};
+          window.__LOCALE__ = "ko";
+          window.__BASE_PATH__ = 'https://social-blog.wix.com';
+          window.__API_BASE_URL__ = 'https://apps.wix.com/_api/communities-blog-node-api';
+          window.__CLIENT_BASE_PATH__ = '';
+          window.__IS_DEV_MODE__ = false;
+        </script>
+      
+    
+  
+
+</body><whale-quicksearch translate="no"></whale-quicksearch></html>
